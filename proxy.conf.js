@@ -24,7 +24,7 @@ function getTarget() {
         const restServerURL = process.env.REST_SERVER_URL;
         return restServerURL;
     }
-    return 'http://localhost:3000';
+    return 'http://40.121.54.175:3000';
 }
 
 const target = getTarget();
