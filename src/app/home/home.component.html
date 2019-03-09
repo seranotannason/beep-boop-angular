@@ -13,18 +13,22 @@
 -->
 <html>
 <body>
-<div class="row" style="background-color: #d3d3d3">
+<div class="row">
   <div class="column" align="center">
     <div class="card">
-			<img src="assets/profile.png" style="width: 80%"/>
-      <h3>Commuters</h3>
+    	<a [routerLink]="['/BeepBoopAccount']">
+				<img src="assets/person-white.png"/>
+	      <h2>Commuters</h2>
+	    </a>
     </div>
   </div>
 
   <div class="column" align="center">
     <div class="card">
-			<img src="assets/listing.png" style="width: 80%"/>
-      <h3>Credit Listings</h3>
+    	<a [routerLink]="['/CreditListing']">
+				<img src="assets/listing.png">
+	      <h2>Credit Listings</h2>
+	    </a>
     </div>
   </div>
 </div>

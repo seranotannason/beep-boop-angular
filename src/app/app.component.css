@@ -12,6 +12,16 @@
  * limitations under the License.
  */
 
+
+html, body {
+    height: 100vh !important;
+}
+
+#backg {
+    background-color: #636363;
+    min-height: 100%;
+}
+
 .container-fluid {
     display: grid;
     margin-left: 72px;
@@ -36,10 +46,6 @@
     padding: 0px;
     margin-left: 0px !important;
     color: #fff;
-}
-
-.navbar-brand:hover {
-    color: #000;
 }
 
 .network-name {

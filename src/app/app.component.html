@@ -13,19 +13,21 @@
 -->
 <html>
 	<body>
-		<nav class="navbar navbar-inverse" style="margin-bottom: 0px;">
-		  <div class="container-fluid">
-		    <div class="navbar-header">
-		      <!-- <p class="network-name">carbon-market@1.1.1-deploy.1.bna</p> -->
-		      <p class="navbar-brand">Beep Boop: The Commuter's Carbon Market</p>
-		    </div>
-		    <ul class="nav navbar-nav">
-		      <li><a [routerLink]="['/BeepBoopAccount']">Commuters</a></li>
-		      <li><a [routerLink]="['/CreditListing']">Credit Listings</a></li>
-		    </ul>
-		  </div>
-		</nav>
+		<div id="backg">
+			<nav class="navbar navbar-inverse" style="margin-bottom: 0px;">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <!-- <p class="network-name">carbon-market@1.1.1-deploy.1.bna</p> -->
+			      <p class="navbar-brand">Beep Boop: The Commuter's Carbon Market</p>
+			    </div>
+			    <ul class="nav navbar-nav">
+			      <li><a [routerLink]="['/BeepBoopAccount']">Commuters</a></li>
+			      <li><a [routerLink]="['/CreditListing']">Credit Listings</a></li>
+			    </ul>
+			  </div>
+			</nav>
 
-		<router-outlet></router-outlet>
+			<router-outlet></router-outlet>
+		</div>
 	</body>
 </html>

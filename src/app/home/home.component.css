@@ -11,8 +11,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 body {
-    background-color: red;
+    height: 100% !important;
+    background-color: transparent;
 }
 
 * {
@@ -48,14 +50,24 @@ body {
 /* Style the counter cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  padding: 32px;
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: #4f4f4f;
   width: 70%;
   margin-top: 15%;
+  border-radius: 25px;
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 48px 0 rgba(0,0,0,0.2);
+}
+
+.card > a > h2 {
+	color: #e2e2e2;
+}
+
+.card > a > img {
+	width: 80%;
+	margin-bottom: 5%
 }

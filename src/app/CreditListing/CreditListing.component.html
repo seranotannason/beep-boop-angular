@@ -23,81 +23,81 @@
         <div class="modal-body">
 
 
-          
 
-            
+
+
               <div class="form-group text-left">
                 <label for="listingId">Listing ID</label>
-                
-                  <input formControlName="listingId" type="text" class="form-control">
-                
-              </div>
-            
-          
 
-            
+                  <input formControlName="listingId" type="text" class="form-control">
+
+              </div>
+
+
+
+
               <div class="form-group text-left">
                 <label for="sellerAccount">Seller</label>
-                
-                    <textarea formControlName="sellerAccount" class="form-control" rows="3"></textarea>
-                
-              </div>
-            
-          
 
-            
+                    <textarea formControlName="sellerAccount" class="form-control" rows="3"></textarea>
+
+              </div>
+
+
+
+
               <div class="form-group text-left">
                 <label for="price">Price</label>
-                
-                  <input formControlName="price" type="number" step='any' class="form-control">
-                
-              </div>
-            
-          
 
-            
+                  <input formControlName="price" type="number" step='any' class="form-control">
+
+              </div>
+
+
+
+
               <div class="form-group text-left">
                 <label for="numCredits">Number of Credits</label>
-                
-                  <input formControlName="numCredits" type="number" step='any' class="form-control">
-                
-              </div>
-            
-          
 
-            
+                  <input formControlName="numCredits" type="number" step='any' class="form-control">
+
+              </div>
+
+
+
+
               <label for="state">State</label>
               <div class="checkbox">
-                
+
                   <label>
                     <input
-                      
+
                         formControlName="state"
-                      
+
                       name="state"
                       value="FOR_SALE"
                       type="radio"
-                      
+
                     />
                     FOR_SALE
                   </label>
-                
+
                   <label>
                     <input
-                      
+
                         formControlName="state"
-                      
+
                       name="state"
                       value="SOLD"
                       type="radio"
-                      
+
                     />
                     SOLD
                   </label>
-                
+
               </div>
-            
-          
+
+
 
         </div>
         <div class="modal-footer">
@@ -124,88 +124,88 @@
         <div class="modal-body">
 
 
-          
+
             <div class="form-group text-left">
               <label for="listingId">Listing ID</label>
-              
-              
-                <input [ngModel]="listingId" formControlName="listingId" class="form-control" disabled="disabled">  
-              
+
+
+                <input [ngModel]="listingId" formControlName="listingId" class="form-control" disabled="disabled">
+
 
             </div>
-          
+
             <div class="form-group text-left">
               <label for="sellerAccount">Seller</label>
-              
-              
-                
+
+
+
                   <textarea [ngModel]="sellerAccount" formControlName="sellerAccount" class="form-control" rows="3"></textarea>
-                
-              
+
+
 
             </div>
-          
+
             <div class="form-group text-left">
               <label for="price">Price</label>
-              
-              
+
+
                 <input [ngModel]="price" formControlName="price" type="number" step='any' class="form-control">
-              
+
 
             </div>
-          
+
             <div class="form-group text-left">
               <label for="numCredits">Number of Credits</label>
-              
-              
+
+
                 <input [ngModel]="numCredits" formControlName="numCredits" type="number" step='any' class="form-control">
-              
+
 
             </div>
-          
+
             <div class="form-group text-left">
               <label for="state">State</label>
-              
-              
-                
+
+
+
                   <div class="row">
                     <div class="col-xs-12 checkbox">
-                    
+
                       <label>
                         <input
-                          
+
                             formControlName="state"
                             [ngModel]="state"
-                          
+
                           name="state"
                           value="FOR_SALE"
                           type="radio"
-                          
+
                         />
                         FOR_SALE
                       </label>
-                    
+
                       <label>
                         <input
-                          
+
                             formControlName="state"
                             [ngModel]="state"
-                          
+
                           name="state"
                           value="SOLD"
                           type="radio"
-                          
+
                         />
                         SOLD
                       </label>
-                    
+
                     </div>
                   </div>
-                
-              
+
+
 
             </div>
-          
+
 
 
         </div>
@@ -254,10 +254,10 @@
 	<div *ngIf="errorMessage" class="alert alert-danger" role="alert">
 		<strong>Error:</strong> {{errorMessage}}
 	</div>
-  
+
   <div class="row">
     <div class="col-md-9">
-        <h1 class="asset-title" id='assetName'>CreditListing</h1>
+        <h1 class="asset-title" id='assetName'>Credit Listings</h1>
     </div>
     <div class="col-md-3">
       <button (click)="resetForm()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#addAssetModal">
@@ -276,34 +276,34 @@
       <table class="table table-responsive">
         <thead class="thead">
           <tr class="thead-cols">
-            
+
                 <th class="info">Listing ID</th>
-            
+
                 <th class="info">Seller</th>
-            
+
                 <th class="info">Price</th>
-            
+
                 <th class="info">Number of Credits</th>
-            
+
                 <th class="info">State</th>
-            
+
               <th class="info-actions">Actions</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let asset of allAssets">
 
-            
+
                 <td class="asset-properties">{{asset.listingId}}</td>
-            
+
                 <td class="asset-properties">{{asset.sellerAccount}}</td>
-            
+
                 <td class="asset-properties">{{asset.price}}</td>
-            
+
                 <td class="asset-properties">{{asset.numCredits}}</td>
-            
+
                 <td class="asset-properties">{{asset.state}}</td>
-            
+
             <td>
               <button (click)="getForm(asset.listingId);" type="button" class="btn btn-update" data-toggle="modal" data-target="#updateAssetModal">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
