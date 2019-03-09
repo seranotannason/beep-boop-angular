@@ -57,6 +57,7 @@ html, body {
 .navbar-nav > li {
     margin-right: 12px;
     cursor: pointer;
+    border-bottom: 3px solid;
 }
 
 .navbar-nav > a {
@@ -65,28 +66,20 @@ html, body {
     letter-spacing: 0.2px;
 }
 
-.navbar-nav > li:hover {
-    background-color: #fff;
-    color: #000;
-}
 
 .navbar-nav > li > a {
-    color: #008b8b;
+		font-size: 16px;
+    color: #fff;
     padding: 10px;
     font-weight: bold;
 }
 
-.navbar-nav > li > .active:hover > a {
-    color: #6C4CC4 !important;
+.navbar-nav > li:hover {
+  border-bottom: 3px solid white;
 }
 
-.navbar-nav > li:hover > a {
-    color: #000;
-}
-
-.navbar-nav .active > a {
-    background-color: #fff;
-    color: #6C4CC4 !important;
+.navbar-nav > li.active {
+  border-bottom: 3px solid white;
 }
 
 .dropdown-menu {
