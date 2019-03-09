@@ -18,7 +18,7 @@
 }
 
 .btn-primary {
-    background: #844AE4;
+    background: #008b8b;
     border-radius: 4px;
     border: 0px;
     font-size: 14px;
@@ -36,8 +36,8 @@
 }
 
 .table > thead > tr > th.info {
-    background: transparent;
-    color: #e2e2e2;
+    background: #fff;
+    color: #343C41;
 }
 .modal-title {
     font-family: inherit;
@@ -127,30 +127,33 @@ label {
 }
 .asset-title{
     font-family: inherit;
-    font-size: 24px;
-    color: #e2e2e2;
+    font-size: 32px;
+    color: #343C41;
     letter-spacing: 0.28px;
     line-height: 28px;
+    font-weight: normal;
 }
 .info{
     font-family: inherit;
-    font-size: 14px;
+    font-size: 22px;
     color: #343C41;
     letter-spacing: 0.2px;
     line-height: 24px;
+    font-weight: normal;
 }
 .info-actions{
     font-family: inherit;
-    font-size: 14px;
-    color: #e2e2e2;
+    font-size: 24px;
+    color: #343C41;
     letter-spacing: 0.2px;
     line-height: 24px;
     padding-left: 24px;
+    font-weight: normal;
 }
 .asset-properties{
     font-family: inherit;
-    font-size: 14px;
-    color: #e2e2e2;
+    font-size: 18px;
+    color: #848484;
     line-height: 42px;
     white-space: nowrap;
     overflow: hidden;

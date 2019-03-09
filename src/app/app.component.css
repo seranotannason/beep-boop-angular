@@ -18,7 +18,7 @@ html, body {
 }
 
 #backg {
-    background-color: #636363;
+    background-color: #fff;
     min-height: 100%;
 }
 
@@ -32,6 +32,7 @@ html, body {
     border-radius: 0px;
     background: #212121;
     border: none;
+    margin-bottom: 30px;
 }
 
 .navbar-header {
@@ -45,7 +46,7 @@ html, body {
     letter-spacing: 0.28px;
     padding: 0px;
     margin-left: 0px !important;
-    color: #fff;
+    color: #008b8b;
 }
 
 .network-name {
@@ -71,14 +72,13 @@ html, body {
 		font-size: 16px;
     color: #fff;
     padding: 10px;
-    font-weight: bold;
+    padding-left: 0px;
+    padding-right: 20px;
+    font-weight: normal;
+    background-color: transparent;
 }
 
 .navbar-nav > li:hover {
-  border-bottom: 3px solid white;
-}
-
-.navbar-nav > li.active {
   border-bottom: 3px solid white;
 }
 
