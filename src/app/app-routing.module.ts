@@ -28,8 +28,6 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'BeepBoopAccount', component: BeepBoopAccountComponent },
   { path: 'CreditListing', component: CreditListingComponent },
-  { path: 'Traveller', component: TravellerComponent },
-  { path: 'Buy', component: BuyComponent },
   { path: '**', redirectTo: '' }
 ];
 

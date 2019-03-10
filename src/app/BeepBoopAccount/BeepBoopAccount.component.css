@@ -89,17 +89,17 @@ label {
 
 }
 .btn-default {
-    color: #844EF4;
+    color: #008b8b;
     background-color: #ffffff;
-    border-color: #844EF4;
+    border-color: #008b8b;
     border-radius: 4px;
     width: 76px;
     height: 40px;
 }
 .btn-danger{
     color: #ffffff;
-    background-color: #844AE4;
-    border-color: #844AE4;
+    background-color: #008b8b;
+    border-color: #008b8b;
     border-radius: 4px;
     width: 76px;
     height: 40px;
@@ -110,8 +110,8 @@ label {
 }
 .btn-success {
     color: #ffffff;
-    background-color: #844AE4;
-    border-color: #844AE4;
+    background-color: #008b8b;
+    border-color: #008b8b;
     border-radius: 4px;
     width: 76px;
     height: 40px;
